@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Grafo de sesiones Individuales</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+    <!-- D3 Tooltip CSS -->
+    <link rel="stylesheet" href="css/d3-tip.css">
+    <!-- Ion range slider -->
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid col-sm-12">
+            <a class="navbar-brand" href="#"><img id="logo" src="img/logo.png"></a>      
+        </div>
+    </nav>
+
+    <!-- Bootstrap grid setup -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="slider-div">
+                    <label>Sesion: <span id="sesion">0</span> </label>
+                    <label>Votacion: <span id="votacion">0</span></label>
+                    
+                    <div id="date-slider"></div>
+                    <br/>
+                    <label> Asunto: <span id="asunto"></span></label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 col-md-3" >
+                <div class="col-3" id="partido-div">
+                    <label>Partidos: </label>
+                    <select id="partido-select" class="form-control">
+                        <option selected value="all">all</option>
+                    </select>
+                </div>
+                <div class="col-3" id="region-div">
+                    <label>Región: </label>
+                    <select  id="region-select" class="form-control">
+                        <option  selected value="all">all</option>
+                        <option value="costa">costa</option>
+                        <option value="sierra">sierra</option>
+                        <option  value="oriente">oriente</option>
+                        <option value="insular">insular</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-9 col-md-9">
+                <div id="chart-area"></div>                 
+            </div> 
+        </div>
+    </div>
+
+<!-- External JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
